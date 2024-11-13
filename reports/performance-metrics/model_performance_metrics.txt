@@ -1,0 +1,63 @@
+Naive Bayes (Averaged over 10 runs):
+Accuracy: 0.7326
+Precision: 0.7825
+Recall: 0.5359
+F1 Score: 0.5750
+AUC of ROC: 0.8385
+
+Logistic Regression (Averaged over 10 runs):
+Accuracy: 0.8193
+Precision: 0.7865
+Recall: 0.7067
+F1 Score: 0.7443
+AUC of ROC: 0.8647
+
+K-Nearest Neighbours (Averaged over 10 runs):
+Accuracy: 0.8450
+Precision: 0.8408
+Recall: 0.7207
+F1 Score: 0.7759
+AUC of ROC: 0.9196
+
+Support Vector Machine (Averaged over 10 runs):
+Accuracy: 0.8472
+Precision: 0.8798
+Recall: 0.6861
+F1 Score: 0.7699
+AUC of ROC: 0.8947
+
+Decision Tree (Averaged over 10 runs):
+Accuracy: 0.9651
+Precision: 0.9863
+Recall: 0.9195
+F1 Score: 0.9516
+AUC of ROC: 0.9966
+
+XGBoost (Averaged over 10 runs):
+Accuracy: 0.9583
+Precision: 0.9678
+Recall: 0.9188
+F1 Score: 0.9425
+AUC of ROC: 0.9915
+
+Random Forest (Averaged over 10 runs):
+Accuracy: 0.9651
+Precision: 0.9702
+Recall: 0.9355
+F1 Score: 0.9524
+AUC of ROC: 0.9926
+
+Voting Classifier (Averaged over 10 runs):
+Accuracy: 0.8486
+Precision: 0.8650
+Recall: 0.7047
+F1 Score: 0.7764
+AUC of ROC: 0.9205
+
+Neural Network (Averaged over 10 runs):
+Accuracy: 0.8768
+Precision: 0.9007
+Recall: 0.7537
+F1 Score: 0.8199
+AUC of ROC: 0.9378
+
