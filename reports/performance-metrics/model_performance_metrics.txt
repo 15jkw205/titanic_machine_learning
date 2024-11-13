@@ -1,63 +1,63 @@
-Naive Bayes (Averaged over 10 runs):
-Accuracy: 0.7326
-Precision: 0.7825
-Recall: 0.5359
-F1 Score: 0.5750
-AUC of ROC: 0.8385
+Naive Bayes (Averaged over 5-Fold Cross Validation):
+Accuracy: 0.7865
+Precision: 0.7248
+Recall: 0.6978
+F1 Score: 0.7110
+AUC of ROC: 0.8145
 
-Logistic Regression (Averaged over 10 runs):
-Accuracy: 0.8193
-Precision: 0.7865
-Recall: 0.7067
-F1 Score: 0.7443
-AUC of ROC: 0.8647
+Logistic Regression (Averaged over 5-Fold Cross Validation):
+Accuracy: 0.8132
+Precision: 0.7755
+Recall: 0.7090
+F1 Score: 0.7407
+AUC of ROC: 0.8504
 
-K-Nearest Neighbours (Averaged over 10 runs):
-Accuracy: 0.8450
-Precision: 0.8408
-Recall: 0.7207
-F1 Score: 0.7759
-AUC of ROC: 0.9196
+K-Nearest Neighbours (Averaged over 5-Fold Cross Validation):
+Accuracy: 0.8020
+Precision: 0.7773
+Recall: 0.6642
+F1 Score: 0.7163
+AUC of ROC: 0.8323
 
-Support Vector Machine (Averaged over 10 runs):
-Accuracy: 0.8472
-Precision: 0.8798
-Recall: 0.6861
-F1 Score: 0.7699
-AUC of ROC: 0.8947
+Support Vector Machine (Averaged over 5-Fold Cross Validation):
+Accuracy: 0.8230
+Precision: 0.8257
+Recall: 0.6716
+F1 Score: 0.7407
+AUC of ROC: 0.8322
 
-Decision Tree (Averaged over 10 runs):
-Accuracy: 0.9651
-Precision: 0.9863
-Recall: 0.9195
-F1 Score: 0.9516
-AUC of ROC: 0.9966
+Decision Tree (Averaged over 5-Fold Cross Validation):
+Accuracy: 0.8076
+Precision: 0.7610
+Recall: 0.7127
+F1 Score: 0.7360
+AUC of ROC: 0.7858
 
-XGBoost (Averaged over 10 runs):
-Accuracy: 0.9583
-Precision: 0.9678
-Recall: 0.9188
-F1 Score: 0.9425
-AUC of ROC: 0.9915
+XGBoost (Averaged over 5-Fold Cross Validation):
+Accuracy: 0.8188
+Precision: 0.7860
+Recall: 0.7127
+F1 Score: 0.7476
+AUC of ROC: 0.8494
 
-Random Forest (Averaged over 10 runs):
-Accuracy: 0.9651
-Precision: 0.9702
-Recall: 0.9355
-F1 Score: 0.9524
-AUC of ROC: 0.9926
+Random Forest (Averaged over 5-Fold Cross Validation):
+Accuracy: 0.7963
+Precision: 0.7431
+Recall: 0.7015
+F1 Score: 0.7217
+AUC of ROC: 0.8426
 
-Voting Classifier (Averaged over 10 runs):
-Accuracy: 0.8486
-Precision: 0.8650
-Recall: 0.7047
-F1 Score: 0.7764
-AUC of ROC: 0.9205
+Voting Classifier (Averaged over 5-Fold Cross Validation):
+Accuracy: 0.8202
+Precision: 0.8043
+Recall: 0.6903
+F1 Score: 0.7430
+AUC of ROC: 0.8592
 
-Neural Network (Averaged over 10 runs):
-Accuracy: 0.8768
-Precision: 0.9007
-Recall: 0.7537
-F1 Score: 0.8199
-AUC of ROC: 0.9378
+Neural Network (Averaged over 5-Fold Cross Validation):
+Accuracy: 0.7907
+Precision: 0.7532
+Recall: 0.6604
+F1 Score: 0.7038
+AUC of ROC: 0.8242
 
