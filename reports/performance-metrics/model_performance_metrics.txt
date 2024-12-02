@@ -4,6 +4,7 @@ Precision: 0.7248
 Recall: 0.6978
 F1 Score: 0.7110
 AUC of ROC: 0.8145
+mean squared error: 0.2135
 
 Logistic Regression (Averaged over 5-Fold Cross Validation):
 Accuracy: 0.8132
@@ -11,6 +12,7 @@ Precision: 0.7755
 Recall: 0.7090
 F1 Score: 0.7407
 AUC of ROC: 0.8504
+mean squared error: 0.1868
 
 K-Nearest Neighbours (Averaged over 5-Fold Cross Validation):
 Accuracy: 0.8020
@@ -18,20 +20,23 @@ Precision: 0.7773
 Recall: 0.6642
 F1 Score: 0.7163
 AUC of ROC: 0.8323
+mean squared error: 0.1980
 
 Support Vector Machine (Averaged over 5-Fold Cross Validation):
 Accuracy: 0.8230
 Precision: 0.8257
 Recall: 0.6716
 F1 Score: 0.7407
-AUC of ROC: 0.8321
+AUC of ROC: 0.8304
+mean squared error: 0.1770
 
 Decision Tree (Averaged over 5-Fold Cross Validation):
 Accuracy: 0.8034
-Precision: 0.7500
-Recall: 0.7164
-F1 Score: 0.7328
-AUC of ROC: 0.7868
+Precision: 0.7581
+Recall: 0.7015
+F1 Score: 0.7287
+AUC of ROC: 0.7801
+mean squared error: 0.1966
 
 XGBoost (Averaged over 5-Fold Cross Validation):
 Accuracy: 0.8188
@@ -39,6 +44,7 @@ Precision: 0.7860
 Recall: 0.7127
 F1 Score: 0.7476
 AUC of ROC: 0.8494
+mean squared error: 0.1812
 
 Random Forest (Averaged over 5-Fold Cross Validation):
 Accuracy: 0.7963
@@ -46,20 +52,23 @@ Precision: 0.7431
 Recall: 0.7015
 F1 Score: 0.7217
 AUC of ROC: 0.8426
+mean squared error: 0.2037
 
 Voting Classifier (Averaged over 5-Fold Cross Validation):
-Accuracy: 0.8216
-Precision: 0.8079
+Accuracy: 0.8202
+Precision: 0.8043
 Recall: 0.6903
-F1 Score: 0.7445
-AUC of ROC: 0.8592
+F1 Score: 0.7430
+AUC of ROC: 0.8591
+mean squared error: 0.1798
 
 Neural Network (Averaged over 5-Fold Cross Validation):
-Accuracy: 0.7907
-Precision: 0.7532
-Recall: 0.6604
-F1 Score: 0.7038
-AUC of ROC: 0.8270
+Accuracy: 0.7851
+Precision: 0.7447
+Recall: 0.6530
+F1 Score: 0.6958
+AUC of ROC: 0.8320
+mean squared error: 0.2149
 
 LightGBM (Averaged over 5-Fold Cross Validation):
 Accuracy: 0.8118
@@ -67,4 +76,5 @@ Precision: 0.7913
 Recall: 0.6791
 F1 Score: 0.7309
 AUC of ROC: 0.8618
+mean squared error: 0.1882
 

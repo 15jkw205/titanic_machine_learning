@@ -14,13 +14,14 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 
 # file paths
 DATA_DIR = BASE_DIR / "data" / "processed"
-REPORTS_DIR = BASE_DIR / "reports" / "Performance-metrics"
+REPORTS_DIR = BASE_DIR / "reports" / "performance-metrics"
+SUBMISSION_DIR = BASE_DIR / "reports" / "Submissions"
 
 
 train_file_path = DATA_DIR / "train.csv"
 test_file_path = DATA_DIR / "test.csv"
-metrics_file_path = REPORTS_DIR / "performance-metrics/model_performance_metrics.txt"
-submission_file_path = REPORTS_DIR / "lightGBM_classifier.csv"
+metrics_file_path = REPORTS_DIR / "performance-metrics"
+submission_file_path = SUBMISSION_DIR
 
 
 # function to make sure directories exist
@@ -58,13 +59,4 @@ MODELS = {
         voting="soft",
     ),
     "Neural Network": MLPClassifier(max_iter=1000),
-    "LightGBM": lgb.LGBMClassifier(
-        n_estimators=150,  # Number of boosting rounds (trees)
-        learning_rate=0.05,  # Step size at each iteration
-        max_depth=-1,  # Maximum depth of a tree (-1 means no limit)
-        random_state=0,  # For reproducibility
-        boosting_type="gbdt",  # Gradient Boosting Decision Tree
-        subsample=0.8,  # Fraction of data used to build each tree
-        colsample_bytree=0.8,  # Fraction of features used in building each tree
-    ),
 }

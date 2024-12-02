@@ -1,0 +1,72 @@
+Naive Bayes (Averaged over 5-Fold Cross Validation):
+Accuracy: 0.7945
+Precision: 0.7229
+Recall: 0.7229
+F1 Score: 0.7229
+AUC of ROC: 0.8119
+mean squared error: 0.2055
+
+Logistic Regression (Averaged over 5-Fold Cross Validation):
+Accuracy: 0.7978
+Precision: 0.7561
+Recall: 0.6710
+F1 Score: 0.7110
+AUC of ROC: 0.8422
+mean squared error: 0.2022
+
+K-Nearest Neighbours (Averaged over 5-Fold Cross Validation):
+Accuracy: 0.7961
+Precision: 0.7653
+Recall: 0.6494
+F1 Score: 0.7026
+AUC of ROC: 0.8216
+mean squared error: 0.2039
+
+Support Vector Machine (Averaged over 5-Fold Cross Validation):
+Accuracy: 0.8090
+Precision: 0.8043
+Recall: 0.6407
+F1 Score: 0.7133
+AUC of ROC: 0.8123
+mean squared error: 0.1910
+
+Decision Tree (Averaged over 5-Fold Cross Validation):
+Accuracy: 0.8026
+Precision: 0.7500
+Recall: 0.7013
+F1 Score: 0.7248
+AUC of ROC: 0.7674
+mean squared error: 0.1974
+
+XGBoost (Averaged over 5-Fold Cross Validation):
+Accuracy: 0.8058
+Precision: 0.7546
+Recall: 0.7056
+F1 Score: 0.7293
+AUC of ROC: 0.8454
+mean squared error: 0.1942
+
+Random Forest (Averaged over 5-Fold Cross Validation):
+Accuracy: 0.7785
+Precision: 0.7104
+Recall: 0.6797
+F1 Score: 0.6947
+AUC of ROC: 0.8375
+mean squared error: 0.2215
+
+Voting Classifier (Averaged over 5-Fold Cross Validation):
+Accuracy: 0.8042
+Precision: 0.7914
+Recall: 0.6407
+F1 Score: 0.7081
+AUC of ROC: 0.8481
+mean squared error: 0.1958
+
+Neural Network (Averaged over 5-Fold Cross Validation):
+Accuracy: 0.7897
+Precision: 0.7404
+Recall: 0.6667
+F1 Score: 0.7016
+AUC of ROC: 0.8090
+mean squared error: 0.2103
+
