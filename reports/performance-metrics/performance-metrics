@@ -1,3 +1,6 @@
+Training Metrics Report - Generated on 2024-12-02 12:04:57
+==================================================
+
 Naive Bayes (Averaged over 5-Fold Cross Validation):
 Accuracy: 0.7945
 Precision: 0.7229
@@ -27,16 +30,16 @@ Accuracy: 0.8090
 Precision: 0.8043
 Recall: 0.6407
 F1 Score: 0.7133
-AUC of ROC: 0.8123
+AUC of ROC: 0.8120
 mean squared error: 0.1910
 
 Decision Tree (Averaged over 5-Fold Cross Validation):
-Accuracy: 0.8026
-Precision: 0.7500
-Recall: 0.7013
-F1 Score: 0.7248
-AUC of ROC: 0.7674
-mean squared error: 0.1974
+Accuracy: 0.7913
+Precision: 0.7285
+Recall: 0.6970
+F1 Score: 0.7124
+AUC of ROC: 0.7737
+mean squared error: 0.2087
 
 XGBoost (Averaged over 5-Fold Cross Validation):
 Accuracy: 0.8058
@@ -55,18 +58,18 @@ AUC of ROC: 0.8375
 mean squared error: 0.2215
 
 Voting Classifier (Averaged over 5-Fold Cross Validation):
-Accuracy: 0.8042
-Precision: 0.7914
+Accuracy: 0.8058
+Precision: 0.7957
 Recall: 0.6407
-F1 Score: 0.7081
-AUC of ROC: 0.8481
-mean squared error: 0.1958
+F1 Score: 0.7098
+AUC of ROC: 0.8484
+mean squared error: 0.1942
 
 Neural Network (Averaged over 5-Fold Cross Validation):
-Accuracy: 0.7897
-Precision: 0.7404
-Recall: 0.6667
-F1 Score: 0.7016
-AUC of ROC: 0.8090
-mean squared error: 0.2103
+Accuracy: 0.7961
+Precision: 0.7524
+Recall: 0.6710
+F1 Score: 0.7094
+AUC of ROC: 0.8062
+mean squared error: 0.2039
 

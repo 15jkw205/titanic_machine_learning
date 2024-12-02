@@ -1,5 +1,4 @@
-import pandas as pd
-import numpy as np
+from datetime import datetime
 from sklearn.pipeline import Pipeline
 from sklearn.model_selection import StratifiedKFold, cross_val_predict
 from sklearn.metrics import (
@@ -13,7 +12,7 @@ from sklearn.metrics import (
 import joblib  # For saving models
 import config
 from dataset import load_data, init_cleaning, split_data
-from features import feature_engineering, preprocess_feat, preprocessor
+from features import feature_engineering, preprocessor
 
 
 def train_models(X_train, y_train):
@@ -45,10 +44,7 @@ def train_models(X_train, y_train):
         precision = precision_score(y_train, y_train_pred, average="binary")
         recall = recall_score(y_train, y_train_pred, average="binary")
         f1 = f1_score(y_train, y_train_pred, average="binary")
-        """To decide between MSE and MAE, it’s crucial to assess the nature of your data. 
-        If your dataset includes outliers — data points that don’t conform to the general pattern — it’s advisable to opt for MAE. 
-        By treating all errors equally, MAE provides better resilience against the distortions introduced by outliers. 
-        Conversely, if your data is relatively clean and without significant outliers, MSE’s faster convergence might offer an advantage."""
+
         mse = mean_squared_error(y_train, y_train_pred)
 
         # Calculate AUC of ROC
@@ -93,20 +89,25 @@ def train_models(X_train, y_train):
     if best_model_name:
         best_pipeline = results[best_model_name]
 
-        # fit the best mode on the entire training dataset to ensure fully fit preprocessor
+        # fit the best model on the entire training dataset to ensure fully fit preprocessor
         best_pipeline.fit(X_train, y_train)
 
-        model_file_path = config.REPORTS_DIR / f"best_model.pkl"
+        model_file_path = config.REPORTS_DIR / "best_model.pkl"
         joblib.dump(best_pipeline, model_file_path)
         print(f"Best model '{best_model_name}' saved to: {model_file_path}")
 
     # Print the model with the highest AUC of ROC
     print(
-        f"\nModel with the highest AUC of ROC: {best_model_name} ({best_model_auc:.4f})"
+        f"\nModel with the highest AUC of ROC: {best_model_name} ({best_model_auc:.4f})\n"
     )
+
+    # Get current date and time
+    current_datetime = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
 
     metrics_file_path = config.metrics_file_path
     with open(metrics_file_path, "w") as f:
+        f.write(f"Training Metrics Report - Generated on {current_datetime}\n")
+        f.write("=" * 50 + "\n\n")
         for metric in training_metrics:
             f.write(metric + "\n")
     print(f"Performance metrics saved to: {metrics_file_path}")

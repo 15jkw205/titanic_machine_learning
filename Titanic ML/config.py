@@ -7,7 +7,6 @@ from sklearn.tree import DecisionTreeClassifier
 from sklearn.ensemble import VotingClassifier, RandomForestClassifier
 from sklearn.neural_network import MLPClassifier
 import xgboost as xgb
-import lightgbm as lgb
 
 # Base directory: starting point for relative paths
 BASE_DIR = Path(__file__).resolve().parent.parent
