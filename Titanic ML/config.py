@@ -43,17 +43,12 @@ MODELS = {
     "Support Vector Machine": SVC(probability=True),
     "Decision Tree": DecisionTreeClassifier(),
     "XGBoost": xgb.XGBClassifier(n_estimators=100, random_state=0),
-    # "Bagging Decision Tree": BaggingClassifier(base_estimator=DecisionTreeClassifier(), n_estimators=10, random_state=42),
-    # "Boosted Decision Tree": AdaBoostClassifier(n_estimators=50, random_state=42),
     "Random Forest": RandomForestClassifier(n_estimators=100, random_state=42),
     "Voting Classifier": VotingClassifier(
         estimators=[
             ("lr", LogisticRegression(max_iter=1000)),
             ("knn", KNeighborsClassifier()),
             ("svc", SVC(probability=True)),
-            # ("XGBoost", xgb.XGBClassifier(n_estimators=100, random_state=0)),
-            # ("Random Forest", RandomForestClassifier(n_estimators=100, random_state=42))
-            # ('xgb', xgb.XGBClassifier(n_estimators=100, random_state=0))
         ],
         voting="soft",
     ),
