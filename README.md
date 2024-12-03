@@ -79,7 +79,7 @@ Run the `model_train.py` script to train the models:
 cd models
 python model_train.py
 ```
-The training model is setup to choose the model with the best AUC of ROC (area under the curve of the reciever operating characteristic)
+The training model chooses the model with the best AUC of ROC (area under the curve of the reciever operating characteristic)
 
 ### Make Predictions
 Run the `model_predict.py` script to make predictions using the trained model:
