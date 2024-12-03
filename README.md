@@ -2,6 +2,9 @@
 
 Project for CS 3820 - Intro to AI with Justin Landry and Jakob West, team 7. This project is a submission for the Titanic Machine Learning competition on Kaggle. The goal is to build a predictive model to determine if a passenger survived the Titanic disaster based on various features available in the dataset.
 
+## Github link
+https://github.com/15jkw205/titanic_machine_learning
+
 ## Table of Contents
 - [Overview](#overview)
 - [Dataset](#dataset)
@@ -101,5 +104,3 @@ The various model metrics (model_performance_metrics.txt) can be found in the `r
 The Voting Classifier consistently performed the best in terms of AUC (Area Under the ROC Curve). The final submission was generated based on the predictions of the best-performing model. The model achieved an accuracy of **0.7919%** on the test data via kaggle.com.
 
 The submission file for kaggle (`submission.csv`) can be found in the `reports/Submissions` directory.
-
-
